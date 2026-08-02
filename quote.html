@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字摘抄</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,SimHei,sans-serif}
+        body{background:#f7f7f7;color:#2d2d2d;padding:40px 20px;max-width:820px;margin:0 auto}
+        .back{display:inline-block;margin-bottom:30px;color:#4477cc;text-decoration:none;font-size:16px}
+        .back:hover{text-decoration:underline}
+        h1{margin-bottom:20px;font-size:28px}
+        .search-input{
+            width:100%;
+            padding:12px 16px;
+            border:1px solid #ddd;
+            border-radius:12px;
+            font-size:16px;
+            margin-bottom:25px;
+            background:#fff;
+        }
+        /* 分类折叠面板样式 */
+        .category-wrap{
+            background:#fff;
+            border-radius:16px;
+            margin-bottom:14px;
+            overflow:hidden;
+        }
+        details{
+            padding:0 24px;
+        }
+        summary{
+            padding:18px 0;
+            font-size:18px;
+            font-weight:600;
+            cursor:pointer;
+            list-style:none;
+            position:relative;
+        }
+        summary::-webkit-details-marker{display:none}
+        summary::after{
+            content:"▼";
+            position:absolute;
+            right:4px;
+            transition:transform 0.2s;
+        }
+        details[open] summary::after{
+            transform:rotate(180deg);
+        }
+        .quote-list{
+            padding:0 0 20px 0;
+        }
+        .quote-item{
+            padding:16px 0;
+            border-bottom:1px solid #eeeeee;
+            line-height:1.8;
+        }
+        .quote-item:last-child{
+            border-bottom:none;
+        }
+        /* 搜索隐藏样式 */
+        .quote-item.hidden{
+            display:none;
+        }
+        footer{margin-top:60px;text-align:center;font-size:13px;color:#999}
+    </style>
+</head>
+<body>
+    <a class="back" href="index.html">← 返回首页</a>
+    <h1>文字摘抄</h1>
+    <input class="search-input" id="searchBox" placeholder="输入关键词搜索全部摘抄...">
+
+    <div id="container">
+        <!-- 分类：坚持 -->
+        <div class="category-wrap">
+            <details>
+                <summary>坚持</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        A man on a thousand-mile walk has to forget his goal and say to himself every morning, "Today I'm going to cover twenty-five miles and then rest up and sleep."
+                    </div>
+                    <div class="quote-item">
+                        你在寻找的奇迹就隐藏在你逃避的行动里。
+                    </div>
+                    <div class="quote-item">
+                        Weep no more, no sigh, nor groan. Sorrow calls no time that's gone.
+                    </div>
+                    <div class="quote-item">
+                        转运的最高境界，就是沉默。<br>
+水深不语，人稳不言，一定要把沉默刻在生命里的每一天。沉默是一个人最高境界，是一个人睿智的体现，沉默是看透之后的不言，是看淡之后的不争，是为人的气度，也是做人的洒脱。一个人懂得了沉默的人，一定有一颗强大的内心。当你有真正想做的事情，最好连神明都不要告诉。从古至今，能成大事者，越是守口如瓶的人。越是心灵有沟壑的人，处事越是低调不张扬，千万不要带着大喇叭把自己的每一步行动都告诉别人。请把你的起早贪黑和千辛万苦，都闷在心里。不成功也没什么，下次再来。如果成功了，我可以很自豪的说，我熬出头了!
+                    </div>
+                    <div class="quote-item">
+                        “且视他人之疑目如盏盏鬼火，大胆地去走你的夜路！”<br>
+——史铁生《病隙碎笔》
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：爱情 -->
+        <div class="category-wrap">
+            <details>
+                <summary>爱情</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        在情感方面，其实并不是那么一回事，在这里只有合适的选择，而没有那么多对与错。
+                    </div>
+                    <div class="quote-item">
+                        其实我也想吃牛腩饭等于，我也想和你一起吃牛腩饭。
+                    </div>
+                    <div class="quote-item">
+                        “小狗，我们好像错过了昨晚的流星。"<br>
+“啊，我还没见过流星。"<br>
+“很遗憾，我也没有。"<br>
+“没关系主人，天上还有很多星星。"<br>
+“可是它们不会动呀。"<br>
+“那我们跑着看。”
+                    </div>
+                    <div class="quote-item">
+                        所谓爱情需要新鲜感，都是比较不爱那一方扯的淡。养过小猫就知道，只爱自己的小猫，好爱好爱，怎么看怎么爱，每一眼都觉得好可爱想抱着猛亲，根本不需要小猫穿情趣内衣才会觉得可以短暂地爱一爱。
+                    </div>
+                    <div class="quote-item">
+                        生理周期确实存在，理性看待，可以关怀但是不是任何人无理取闹的理由。毕竟好多东西也能归结于激素，还有人犯罪归结于酒精呢。毕竟还有超雄综合征把管不住下体然后拿激素当挡箭牌呢。
+                    </div>
+                    <div class="quote-item">
+                        人和人之间都有一座桥，那座桥是用眼泪做成的。真心、爱的升华，就是眼泪。爱就是很多很多的眼泪。人在什么时候会流眼泪呢，在走了很久很久的路终于得到回报的时候，在明确感受到幸福的时候，在心疼的时候，在手足无措的时候，在付出了一切仍觉亏欠的时候，在知道人和人分开就再也不会相见的时候，眼泪就会涌出来。泪水，向来都是最难渡过的河流。<br>
+——伍佰《泪桥》
+                    </div>
+                    <div class="quote-item">
+                        “既然他要做的事情，我为什么要拖后腿，既然他是我男人，那我应该帮他做成自己想做的事情。”<br>
+——白灵淼
+                    </div>
+                    <div class="quote-item">
+                        钱与姑娘哪个更重要，姑娘又没经常跟你吵着要这要那，这你心里有数，再说了，这一点很重要，无论现在或你们婚后大事小情能一同商量着办，这一点对于一个家庭是否幸福很重要，这就是一个人的德行和修养。
+                    </div>
+                    <div class="quote-item">
+                        为啥现在的恋爱里头都参杂着明码标价的数字，看着真是不舒服。<br>
+两个人相处，谈恋爱，是很美好的事情，没结婚没小孩，压力又不大，算来算去好累的。2万块又不是多大的数，完全能负担起，率性一点，花钱买个开心都值。算计太多活得累，格局大一点，有纠结这些破事的时间和精力还不如多想想路子再多赚2万呢。<br>
+对于人，要珍惜眼前的，别盯着外面的；<br>
+对于钱，别在乎碗里的，要盯着锅里的。
+                    </div>
+                    <div class="quote-item">
+                        喜欢一个人是因为优点，爱一个人是接受缺点。喜欢是棋逢对手，而爱是甘拜下风。
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：心理学 -->
+        <div class="category-wrap">
+            <details>
+                <summary>心理学</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        有一个不太健康的习惯叫穷思竭虑。<br>
+它是指不断的反复回味一件负面的事，比如你的父母冲你发脾气了，又或者老师在课堂上说你愚蠢了，然后你不断在脑海里回放当时的情况，反复回味不愉快的事情，这会让你在这个事情上不断的内耗自己，你让自己陷入到一个很糟糕的境地，甚至还可能诱发抑郁焦虑。<br>
+一个人骂了你两句，你记了一年，那么他就骂了你一年。
+                    </div>
+                    <div class="quote-item">
+                        权威人士很容易把自己想象成严厉的父母，把员工当成顽劣的孩子来惩罚。新闻报道里似乎也充斥着霸凌的案例。
+                    </div>
+                    <div class="quote-item">
+                        在头脑发热，情绪激动，想在众人面前展露自己之前，要多冷静冷静，注意自己言行，不要太过兴奋。
+                    </div>
+                    <div class="quote-item">
+                        接纳是指心态上的接纳，而不是行为上；也就是心态上接受了这件事情已经发生了，然后接纳臣服这种已经发生的现象，而不是一味地去抱怨，去内耗，应迅速调整好状态，制定适合的解决方案，进而去奋力一搏。承认事情的发生，不纠结不报怨，去思考去行动怎么把烂牌打好。
+                    </div>
+                    <div class="quote-item">
+                        “李火旺，你这个年纪以为自己真心就是一切。”<br>
+“但是等你到我这个年纪，就会明白，你真心不真心不重要，重要的是你的真心为你爱的人带来什么。”<br>
+“你别老是站在自己的角度上去看事情，你也可以试着从别人的角度上理解。”<br>
+“如果你的爱只会让杨娜更痛苦却选择继续爱下去，那你爱是自私的，你爱的只是你自己而已。”<br>
+“我知道你虽然病了，但是你会做出正确选择的。”<br>
+——易东来
+                    </div>
+                    <div class="quote-item">
+                        被别人的话影响情绪是一件很蠢的事
+                    </div>
+                    <div class="quote-item">
+                        太在意别人的观点只会增加痛苦
+                    </div>
+                    <div class="quote-item">
+                        镜子脏的时候，你肯定不会认为自己的脸脏。那为什么别人评价你不好的时候，你就认为自己真的不好呢?
+                    </div>
+                    <div class="quote-item">
+                        不要希望自己成为一个十分完美的人，因为谁人背后无人说，谁人背后不说人?你做的再好，都有人说你。因为我们没有办法改变与你三观不一致的人，你能做的只能是你自己。
+                    </div>
+                    <div class="quote-item">
+                        做人先不管别人善不善，自己要心善，做事不管别人好不好.首先自己要做好。
+                    </div>
+                    <div class="quote-item">
+                        永远不要帮着别人欺负自己，任何一段糟糕的关系，都有你自己的一份功劳。
+                    </div>
+                    <div class="quote-item">
+                        你眼中的问题，是他人的解决方案。
+                    </div>
+                    <div class="quote-item">
+                        “情商真正的意思是什么?”<br>
+“意思是理解你内心的情感世界，并且还能掌控它。”<br>
+——《蛤蟆先生去看心理医生》
+                    </div>
+                    <div class="quote-item">
+                        他们都有强大的自我意识，了解自己的情感。他们能管理情绪，能从悲伤和不幸中重新振作。但也许最重要的是，他们能控制冲动，也懂得延迟满足，从而避免轻率的决定和不妥的行为。<br>
+——《蛤蟆先生去看心理医生》
+                    </div>
+                    <div class="quote-item">
+                        要仁慈，因为你所见的每个人都在打一场硬仗。<br>
+——柏拉图
+                    </div>
+                    <div class="quote-item">
+                        如果你渴望得到某样东西，你得让它自由，如果它回到你身边，它就是属于你的，如果它不会回来，你就从未拥有过它。<br>
+——基督山伯爵
+                    </div>
+                    <div class="quote-item">
+                        不要美化你没选择的那条路和曾经走过的路，你总会走上那条让你变好的路，对比就是造成不满足的小偷。Comparison is the thief of joy.<br>
+心理学上好像有个类似的理论，大概就是动机过强会自我压力过大导致不敢开始，动机不强意愿不足不想做，这两种状态效率都达不到最高。只有动机一般的时候，抱着我试试看的没什么压力的心态才会效率最大化。<br>
+记得看过一个故事貌似也是这么个道理，一个年轻人问剑道大师多久能练成合格的剑道，大师说一年。年轻人又问如果自己废寝忘食加倍努力的练呢?大师说那要十年。总之就是越努力想快点出成果就越练不成。<br>
+回过来看还真是有那么些道理<br>
+耶克斯.多德森定律，压力效率的倒U型曲线，完美主义拖延症。
+                    </div>
+                    <div class="quote-item">
+                        “生命是一团欲望。欲望不能满足便痛苦，满足便无聊，人生就在痛苦和无聊之间摇摆。”<br>
+——叔本华
+                    </div>
+                    <div class="quote-item">
+                        只要不关注任何人的动态，不揣测任何人的想法，不去设想一些没发生的事情，简单点，顿一点，慢一点，你会发现你过得很自在。专注于自己的感受。过多的分析他人的行为其实是会戕害自己的。少研究别人，多提升自己。
+                    </div>
+                    <div class="quote-item">
+                        心理医生：有些人，特别是你的亲人，会选择性的只记住和认可的那个最容易被操控的阶段的你，无论过去了多久，也无论你已经改变了多少，他们只会像那时候一样对待你。
+                    </div>
+                    <div class="quote-item">
+                        成长的标准就是拒绝别人以后没有任何的愧疚感。<br>
+——萨特
+                    </div>
+                    <div class="quote-item">
+                        心理医生：坏事还没发生就提前担心焦虑，相当于你遭遇了两次坏事噢。事后还一直想的话，相当于遭遇了三次。
+                    </div>
+                    <div class="quote-item">
+                        心理医生：“你在试图把一个不理智的人说的话合理化，所以你才那么痛苦。事实就是你永远不能在胡言乱语中得到意义。”
+                    </div>
+                    <div class="quote-item">
+                        心理医生：“焦虑不是恶魔也不是敌人，它像是一个过度保护你的朋友。因为它曾经看到你受到伤害，所以想保护你的安全。不要粗暴地对待它，向它证明你已经强大到能处理事情保护自己了。”
+                    </div>
+                    <div class="quote-item">
+                        怀疑性认知的六条原则（关键在三）<br>
+1.我碰到的是什么内容?<br>
+2.信息完整吗?假如不完整，缺少了什么?<br>
+3.信源是谁/什么?我为什么要相信他们?<br>
+4.提供了什么证据?是怎样检验或核实的?<br>
+5.其他可能性解释或理解是什么?<br>
+6.我有必要知道这些信息吗?<br>
+——《真相：信息超载时代如何知道该相信什么》
+                    </div>
+                    <div class="quote-item">
+                        关于“接纳过去”:“我一直觉得“后悔”就是在欺负以前的自己，人不可能每一步都正确，我不想回头看，也不想批判当时的自己，没什么好抱怨的，我大大方方为我的认知买单负责。也没什么好自责的，如果重来一次，以我当时的阅历和心智，还是会做出同样的选择，我们不能站在现在的高度，去批判当时的自己，你要知道，人生没有白走的路，我始终相信,所有的遗憾和痛苦都是应该经历的，人生永远没有正确的选择，要让选择变得正确，山有顶峰，湖有彼岸，在人生漫漫长途中，万物皆有回转，人生皆有上峰。<br>
+——《当下的力量》埃克哈利·托利
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：社会 -->
+        <div class="category-wrap">
+            <details>
+                <summary>社会</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        男女之所以不平等不是心理、生理上的原因，中心关系还在经济。我们从过去的社会关系中继承下来的两性的法律上的不平等并不是妇女在经济上受压迫的原因，而是它的结果。
+                    </div>
+                    <div class="quote-item">
+                        在别人饥饿的时候，你如果没法帮助，那么小声咀嚼也是一种礼貌。
+                    </div>
+                    <div class="quote-item">
+                        我年纪还轻，阅历不深的时候，我父亲教导过我一句话，我至今还念念不忘。“每逢你想要批评任何人的时候，”他对我说，“你就记住，这个世界上所有的人，并不是个个都有过你拥有的那些优越条件。”<br>
+——《了不起的盖茨比》
+                    </div>
+                    <div class="quote-item">
+                        Christmas is not a time nor a season, but a state of mind. To cherish peace and goodwill, to be plenteous in mercy, is to have the real spirit of Christmas.
+                    </div>
+                    <div class="quote-item">
+                        了解，是对话的前提，也是一切对话的结局。
+                    </div>
+                    <div class="quote-item">
+                        我们不能随便生气。生气的时候，你会使出真本领。这样，别人就会知道你的真本领很烂。<br>
+——阿拉伯谚语
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：认知&世道 -->
+        <div class="category-wrap">
+            <details>
+                <summary>认知&世道</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        这个世界的真相都是反着的<br>
+作者：明王 日期：2016-05-17<br>
+告诉你一个秘密，这个世界真相都是反着的。那么要想改变命运，先要改变我们的习惯，所谓一命二运三风水，四积功德五读书，六名七相八敬神，九交贵人十养生，这正是习惯<br>
+【逆天改命】怎么做?逆就是倒过来看。我们要先十养生，所谓养生即修身，<br>
+你要先身体健康，精力充沛，有一个好习惯<br>
+只有这样才会【九交贵人】，才能有好运气遇到贵人.到了【八敬神】，贵人告诉我们要“敬天爱人”<br>
+敬畏天地万物<br>
+【七相】，这时我们的“相貌”开始变化了，这也就是相由心生，境由心转，心生万物<br>
+接下来是【六名】，当相貌变的时候，自然名气也就越来越大了。<br>
+【五读书】“有名气以后就要读书，要学习，这样你的才华才会匹配得上你的名气。因为厚德才能载物，德不配位，必有灾祸<br>
+有了成就以后到了【四积功德】，懂得为自己以及子孙后代积阴德，开始捐款捐物，做好事，做善事了<br>
+再然后就到了【三风水】，风水指的就是你流通气运和磁场<br>
+你会开始懂得如何为自己调频到高能量磁场【二运】你的运气就这样悄无声息的改变了。<br>
+最后【一命】、好运气来了，自然你的人生就改变了。这就是反过来的规律正所谓顺成仁，逆成仙，玄妙只在颠倒间。<br>
+当你倒立看这个世界的时候，你才能看到这个世界的真相
+                    </div>
+                    <div class="quote-item">
+                        李斯硕鼠论
+                    </div>
+                    <div class="quote-item">
+                        擦屁股的纸只有10%是真正能擦到屎的，但是剩下90%没擦到屎的纸也并不是没有存在的意义，相反，他们意义重大，没有这90%屎就粘手上了。所以看起来平常人没起到核心作用，但是不意味着他们的存在就是没有意义的。况且你距离屎也非常接近了。
+                    </div>
+                    <div class="quote-item">
+                        财富是对认知的补偿，不是对勤奋的奖励。<br>
+——洛克菲勒
+                    </div>
+                    <div class="quote-item">
+                        心软和不好意思，只会杀死自己。理性的薄情，才是生存利器。<br>
+——毛姆
+                    </div>
+                    <div class="quote-item">
+                        沾因必得果，如果是善果还好，但这世界善恶都是有量的，只会转移不会变多变少。
+                    </div>
+                    <div class="quote-item">
+                        说实话，普通人分辨不出来的情况下，别去瞎帮人，本来就是钞票有限，哪经得起考验。
+                    </div>
+                    <div class="quote-item">
+                        过度渴望，招致完全绝望。
+                    </div>
+                    <div class="quote-item">
+                        令频改则难从。
+                    </div>
+                    <div class="quote-item">
+                        消费社会的背景是物质丰盛的社会，但他并不认为这个社会就是平等公正的。分配不均、贫富差距、浪费随处可见，符号价值并非平等地被人消费，而是拥有资本的人才有权消费符号。“我们从大众交流中获得的不是现实，而是对现实所产生的眩晕。”
+                    </div>
+                    <div class="quote-item">
+                        人的每一种身份都是一种枷锁，唯有失去，才是通往自由之途。<br>
+——月亮与六便士<br>
+批注：不成为谁的谁，只成为自己。
+                    </div>
+                    <div class="quote-item">
+                        这个世界没有真相，只有视角。一个人没有性格，只有角色。没有对错，只有立场。
+                    </div>
+                    <div class="quote-item">
+                        一个人对你有权力是因为他手里有你想要的资源，你越想要，他的资源越多，权力就越大，你自然而然就会被拿捏。但是在工作场所出现的这种游戏，大部分员工都是有所求，没有资本与底气去反抗，除了生产力发展，就是要靠教育了，教育有资源的人平和谦逊，教育没有资源的人不卑不亢，才能一起对抗人性。<br>
+批注：无欲则刚。
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：职场&现实 -->
+        <div class="category-wrap">
+            <details>
+                <summary>职场&现实</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        作为一个自己有房子的雇员，你努力工作的结果如下：<br>
+1.你为公司工作。雇员的工作只会使雇主或股东更加富有，而不能使他们自己富有。你的努力和成功将使雇主更加成功并得以提早退休。<br>
+2.你为政府工作。政府在你还未看到自己的工资时就已拿走了一部分，你努力工作，其结果是使政府的税收增加。实际上大多数人每年从1月到5月都是在为政府白白工作。<br>
+3.你为银行工作。缴了税后，你的最大支出应该是抵押贷款和信用卡账单了。<br>
+问题是如果你只懂得努力工作，以上三方从你那儿拿走的劳动成果也就会更多。你需要学会怎样才能使你的努力更直接地为你和你的家人带来好处。
+                    </div>
+                    <div class="quote-item">
+                        是的，现工作我已经被那种人伤害到对任何一个人讲的什么话都不带信不带质疑的按照流程做事了。行就行，不行就不行。因为你特殊对待，ta会觉得你就是不想为我做好。
+                    </div>
+                    <div class="quote-item">
+                        别做这种梦了，好好学习，锻炼身体，靠自己的力量去赚钱吧。
+                    </div>
+                    <div class="quote-item">
+                        问：我是个实在人，总吃亏咋办?<br>
+答：做了自己内心不情愿做的事，已经不实在了。
+                    </div>
+                    <div class="quote-item">
+                        领导安排你给他写发言材料的时候，不要太早给他，要不然一定是反复改几稿才通过。
+                    </div>
+                    <div class="quote-item">
+                        警惕招手示意带人赚钱的，真能赚钱自己爹妈兄弟姐妹不带，凭什么带你一个陌生人。
+                    </div>
+                    <div class="quote-item">
+                        永远把这句话记在心里，同情谁，就肩负谁的命运，可怜谁，就承担谁的遭遇。我现在就是可怜别人，有官司在身上，我是原告。
+                    </div>
+                    <div class="quote-item">
+                        以我工科面试经验，跟大boss/人力等不懂技术的多扯技术和项目，跟pro/tec多聊努力和梦想。
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- 分类：小说摘录 -->
+        <div class="category-wrap">
+            <details>
+                <summary>小说摘录</summary>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        听到李火旺这么问，白灵淼脸上微微一愣，“李师兄，我为什么要骗你呢，咱们一路辛辛苦苦走过来了，我怎么对你，难道还需要怀疑吗?”<br>
+“我知道，我当然知道，但是哪怕没有恶意，哪怕是善意的目的，可有时候自己人也会骗自己人的，上过一次当了，难免有些反应过度。”<br>
+听到这话，白灵淼轻轻地叹了一口气。“李师兄，你要知道什么。你只要问，我都告诉你，但是你能别怀疑我吗?我心里真的不好受。”<br>
+<br>
+李火旺听到这话，实在是忍不住了，刚准备开口反驳，然而白灵淼的脸色忽然一变。<br>
+那熟悉的感觉让李火旺微微一愣，这是二神，二神居然没死!<br>
+就在李火旺开口刚要说话的时候，二神直接瞪着他说道：“你能不能别这么事多?你难道就喜欢让淼淼身心充满痛苦跟绝望是吧?”<br>
+“可那是假的!”<br>
+“假的又怎么样?我们乐意!再说了，你怎么就觉得这一定是假的呢?真的假的你就一定分得那么清吗?”
+                    </div>
+                    <div class="quote-item">
+                        “你把发生的一切事情都告诉我，任何事情都别隐瞒!有什么问题我们一同面对!”
+                    </div>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <footer>©2026 个人站点 | MIT协议开源 | 部分代码由Gemini辅助生成</footer>
+
+<script>
+    const searchBox = document.getElementById('searchBox');
+    const allItems = document.querySelectorAll('.quote-item');
+    const allDetails = document.querySelectorAll('details');
+
+    searchBox.addEventListener('input',()=>{
+        const keyword = searchBox.value.trim().toLowerCase();
+        if(!keyword){
+            // 清空搜索，全部条目显示，全部折叠
+            allItems.forEach(item=>item.classList.remove('hidden'));
+            allDetails.forEach(d=>d.removeAttribute('open'));
+            return;
+        }
+        // 筛选匹配文本
+        allItems.forEach(item=>{
+            const text = item.innerText.toLowerCase();
+            if(text.includes(keyword)){
+                item.classList.remove('hidden');
+                // 自动展开所属分类
+                item.closest('details').setAttribute('open','open');
+            }else{
+                item.classList.add('hidden');
+            }
+        })
+    })
+</script>
+</body>
+</html>
