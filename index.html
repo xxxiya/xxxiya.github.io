@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的私人小站</title>
+    <!-- 引入Waline样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, SimHei, sans-serif;
+        }
+        body {
+            background-color: #f7f7f7;
+            color: #2d2d2d;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .desc {
+            color: #666;
+            font-size: 16px;
+        }
+        .card-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 32px 26px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.25s ease;
+        }
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display:block;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        .card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* 新增留言板样式，和页面风格匹配 */
+        .message-area {
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid #dddddd;
+        }
+        .message-area h2 {
+            font-size: 24px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 13px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的私人小站</h1>
+        <p class="desc">记录思考、文字、规划与期待</p>
+    </header>
+
+    <div class="card-wrap">
+        <div class="card">
+            <a href="thought.html">
+                <h2>人生感悟</h2>
+                <p>记录日常思考、经历复盘、心态沉淀。</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quote.html">
+                <h2>文字摘抄</h2>
+                <p>书籍句子、台词、触动自己的文字。</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="finance.html">
+                <h2>财务Tips</h2>
+                <p>收支规划、理财认知、消费思考。</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="goal.html">
+                <h2>理想目录</h2>
+                <p>长期目标、想要完成的清单、未来规划。</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== 新增：主页留言板区域 ========== -->
+    <div class="message-area">
+        <h2>留言交流</h2>
+        <div id="waline"></div>
+    </div>
+    <!-- ======================================== -->
+
+    <footer>
+        ©2026 个人站点 | MIT协议开源 | 部分代码由Gemini辅助生成
+    </footer>
+
+<!-- Waline 脚本 -->
+<script type="module">
+    import { Waline } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
+    Waline({
+        el: '#waline',
+        serverURL: '在这里填入你部署后的Waline网址',
+        placeholder: "写下你的想法，欢迎留言交流...",
+        avatar: 'robohash',
+        pageview: false
+    });
+</script>
+
+</body>
+</html>
